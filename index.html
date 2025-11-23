@@ -20,70 +20,56 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <div id="app">
-        <!-- Background Elements -->
-        <div class="bg-blob blob-1"></div>
-        <div class="bg-blob blob-2"></div>
-        <div class="glass-container">
-            <!-- Header -->
-            <!-- Views will be injected here via JS -->
+<source src="character.mp4" type="video/mp4">
+</video>
+</div>
+<h1>나만의 완벽한<br><span class="gradient-text">공부법 찾기</span></h1>
+<p>학습 성향을 진단하고 맞춤형 코칭을 받아보세요.</p>
+<button id="start-btn" class="primary-btn">
+    진단 시작하기 <i data-lucide="arrow-right"></i>
+</button>
+</div>
+</div>
 
-            <!-- View 1: Landing -->
-            <div id="view-landing" class="view active">
-                <div class="hero-content">
-                    <div class="character-wrapper">
-                        <video autoplay loop muted playsinline class="character-video">
-                            <source src="character.mp4" type="video/mp4">
-                        </video>
-                    </div>
-                    <h1>나만의 완벽한<br><span class="gradient-text">공부법 찾기</span></h1>
-                    <p>학습 성향을 진단하고 맞춤형 코칭을 받아보세요.</p>
-                    <button id="start-btn" class="primary-btn">
-                        진단 시작하기 <i data-lucide="arrow-right"></i>
-                    </button>
-                </div>
-            </div>
-
-            <!-- View 2: Assessment -->
-            <div id="view-assessment" class="view hidden">
-                <div class="assessment-container">
-                    <div class="progress-bar">
-                        <div class="progress-fill" style="width: 0%"></div>
-                    </div>
-                    <div id="question-card" class="card">
-                        <!-- Question injected here -->
-                    </div>
-                </div>
-            </div>
-
-            <!-- View 3: Chat -->
-            <div id="view-chat" class="view hidden">
-                <div class="chat-container">
-                    <div id="chat-messages" class="chat-messages">
-                        <!-- Messages injected here -->
-                        <div class="message bot">
-                            <div class="message-content">
-                                안녕하세요! 학습 성향에 맞춰 공부를 도와드릴 준비가 되었습니다. 어떤 과목을 공부 중이신가요?
-                            </div>
-                        </div>
-                    </div>
-                    <div class="chat-input-area">
-                        <input type="text" id="user-input" placeholder="질문을 입력하세요..." autocomplete="off">
-                        <button id="send-btn" class="send-btn">
-                            <i data-lucide="send"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            </main>
+<!-- View 2: Assessment -->
+<div id="view-assessment" class="view hidden">
+    <div class="assessment-container">
+        <div class="progress-bar">
+            <div class="progress-fill" style="width: 0%"></div>
+        </div>
+        <div id="question-card" class="card">
+            <!-- Question injected here -->
         </div>
     </div>
+</div>
 
-    <script src="script.js"></script>
-    <script>
-        lucide.createIcons();
-    </script>
+<!-- View 3: Chat -->
+<div id="view-chat" class="view hidden">
+    <div class="chat-container">
+        <div id="chat-messages" class="chat-messages">
+            <!-- Messages injected here -->
+            <div class="message bot">
+                <div class="message-content">
+                    안녕하세요! 학습 성향에 맞춰 공부를 도와드릴 준비가 되었습니다. 어떤 과목을 공부 중이신가요?
+                </div>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" placeholder="질문을 입력하세요..." autocomplete="off">
+            <button id="send-btn" class="send-btn">
+                <i data-lucide="send"></i>
+            </button>
+        </div>
+    </div>
+</div>
+</main>
+</div>
+</div>
+
+<script src="script.js"></script>
+<script>
+    lucide.createIcons();
+</script>
 </body>
 
 </html>
